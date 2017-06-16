@@ -350,6 +350,7 @@ class Gecka_Terms_Ordering {
 			$clauses['orderby'] = str_replace( 'ORDER BY', $order . ',', $clauses['orderby'] );
 		} else {
 			$clauses['orderby'] = $order;
+			$clauses['order'] = '';
 		}
 
 		return $clauses;
